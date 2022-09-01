@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Portafolio 1.0</title>
+</head>
+<body>
+    <!--Seccion para el navbar-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a href="#seccion-1" class="navbar-brand">Carlos <span id="lastname">Opico</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#seccion-2">Datos Generales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#seccion-2">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#seccion-3">Formacion Educativa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#seccion-4">Experiencias Laborales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Proyectos personales</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </nav>
+    </header>
+    <main>
+        <!--Informacion sobre la primera seccion de la pagina-->
+        <div class="container">
+            <div class="row d-flex align-items-center myinfo">
+                <a name="seccion-1" ></a>
+                <div class="col col-8 text-justify lead">
+                    <h3>Acerca de mí</h3>
+                    <p class="aboutme"><em><b>Me motiva estar en constante aprendizaje y mejorar mis capacidades en el trabajo y nuevas adquirir nuevas experiencias. Trabajador, comunicador, responsable, respetuoso, honesto, de participación, atento, rápido aprendizaje.</b></em></p>
+                    <button class="btn btn-info mycv" type="button"><a href="documents/CVCarlosOpico.pdf" class="btn btn-info" download>Mi Curriculúm</a></button>
+                </div>
+                <div class="col col-4 flex-shrink-0">
+                    <img src="img/IMG_20211002_194300.jpg" alt="me" class="img-fluid rounded-4 float-end myphoto"  width="250rem">
+                </div>
+            </div>
+        </div>
+        <hr class="border border-info border-2 opacity-75%">
+        <a name="seccion-2"></a>
+        <div class="container datos">
+            <div class="row">
+                <h3>Datos generales y Habilidades</h3>
+                <div class ="col">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item datos-general">
+                            <h4 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Datos Generales
+                            </button>
+                            </h4>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body align-items-center">
+                                    <ul class="list-group">
+                                        <li class="list-group-item lista">Carlos Antonio Opico Martinez</li>
+                                        <li class="list-group-item lista">Contacto: 77189731</li>
+                                        <li class="list-group-item lista">Direccion: Condominios Cayala Troncal del Norte Km10 San Salvador, Ciudad Delgado</li>
+                                        <li class="list-group-item lista">DUI: 05483203-5</li>
+                                        <li class="list-group-item lista">NIT: 0614-300197-120-1</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item datos-habilidades">
+                            <h4 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Habilidades
+                            </button>
+                            </h4>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>HTML</strong>
+                                    <div class="progress">                                        
+                                        <div class="progress-bar bg-warning" role="progressbar" aria-label="Success example" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <strong>CSS</strong>
+                                    <div class="progress">                                        
+                                        <div class="progress-bar bg-primary" role="progressbar" aria-label="Success example" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <strong>bootstrap</strong>
+                                    <div class="progress">                                        
+                                        <div class="progress-bar bg-danger" role="progressbar" aria-label="Success example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <strong>JavaScript</strong>
+                                    <div class="progress">                                        
+                                        <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <strong>English</strong>
+                                    <div class="progress">                                        
+                                        <div class="progress-bar bg-info" role="progressbar" aria-label="Success example" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <hr class="border border-info border-2 opacity-75%">
+
+        <!--Contenedor de informacion de formacion academica -->
+        <a name="seccion-3"></a>
+        <div class="container container-fluid formacion">
+            <div class="row text-center">
+                <h3 class="">Formación academica</h3>
+                <div class="col col-md-4 contenedor-job border rounded-4">
+                    <h4>Instituto Nacional de Apopa</h4>
+                    <p><b>Bachillerato Técnico en Electrónica.</b></p>
+                    <p><b>2012 - 2014</b></p>
+                    <img src="img/INA.jpg" alt="INA" width="200px">
+                </div>
+                <div class="col col-md-4 contenedor-job border rounded-4">
+                    <h4>Direct English Apopa.</h4>
+                    <p><b>Ingles avanzado</b></p>
+                    <p><b>2021 - 2022</b></p>
+                    <br>
+                    <img src="img/Direct.jpg" alt="Direct" width="200px">
+                </div>
+                <div class="col col-md-4 contenedor-job border rounded-4">
+                    <h4>ITCA - FEPADE</h4>
+                    <p><b>Técnico en Ingeniería de Sistemas Informativos.</b></p>
+                    <p><b>2016 - 2017</b></p>
+                    <img src="img/ITCA.png" alt="ITCA" width="200px">
+                </div>
+            </div>
+        </div>
+        <hr class="border border-info border-2 opacity-75%">
+
+        <!--Informacion sobre la cuarta seccion de la pagina-->
+        <a name="seccion-4"></a>
+        <div class="container container-fluid experiencias">
+            <div class="row text-justify ">
+                <h3>Experiencias Laborales</h3>
+                <div class="col col-md-4 contenedor-job border rounded-4">
+                    <h4>Servicel Corporation SA de CV</h4>
+                    <p><span>Encargado temporal en el área de Logística: </span>(Agosto 2018 - octubre 2018) Actividades: Ingreso de teléfonos a taller, asignación de teléfonos a técnicos y despacho de solicitudes.</p>
+                </div>
+                <div class="col col-md-4 contenedor-job border rounded-4">
+                    <h4>Empresa: Servicel Corporation SA de CV</h4>
+                    <p><span>Técnico Logístico Tigo la Gran Vía: </span>(Octubre 2018 - Diciembre 2021) Actividades: Configuración y soporte técnico de teléfonos, mantenimiento y reparación de equipo, técnico logístico de primera línea con atención directa a cliente.</p>
+                </div>
+                <div class="col col-md-4 contenedor-job border rounded-4">
+                    <h4>Empresa: Iphone 911</h4>
+                    <p><span>Atención al cliente y Encargado de caja: </span>(Diciembre 2021 - Junio 2022) Actividades: Atención directa al cliente para asesorar la reparación del teléfono y encargado de caja para realizar cobros de productos y reparación.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="card-footer">
+            <h2><strong>Carlos Antonio Opico</strong></h2>
+            <h5><strong>FrontEnd Developer</strong></h5>
+        </div>
+        <div class="social-network">
+            <a href="https://www.facebook.com/profile.php?id=100002379279450" target="_blank"><img src="img/facebook.png" alt="facebook" width="50px"></a>
+            <a href="https://www.linkedin.com/in/carlos-antonio-opico-mart%C3%ADnez-3233b0216/" target="_blank"><img src="img/linkedin.png" alt="linkedin" width="50px"></a>
+            <a href="https://www.instagram.com/carlos_martinez197/" target="_blank"><img src="img/instagram.png" alt="instagram" width="50px"></a>
+        </div>
+    </footer>
+</body>
+<script src="JS/bootstrap.bundle.min.js"></script>
+</html>

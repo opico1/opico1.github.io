@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #191C32;
+    color: wheat;
+}
+
+#lastname{
+    color: aqua;
+}
+
+div ul li a:hover{
+    background-color: rgb(55, 136, 241);
+    color: #191C32;
+    transition: ease-in 0.4s;
+}
+
+main div .myinfo{
+    margin: 3rem;
+}
+
+h3{
+    color: aqua;
+    margin: 30px 0px;
+}
+
+h4{
+    color: rgb(148, 171, 235);
+
+}
+
+.footer h2{
+    font-size: 2rem;
+}
+
+.footer h5{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+span{
+    color: darkcyan;
+}
+
+.aboutme{
+    font-size: x-large;
+}
+
+main div .mycv{
+    color: darkblue;
+    padding: 0;
+}
+
+.datos{
+    margin: 5rem;
+}
+
+.datos-general{
+    background-color: #2b3058;
+}
+
+.lista{
+    background-color: #2b3058;
+    color: wheat;
+}
+
+.progress{
+    background-color: wheat;
+}
+
+.datos-habilidades{
+    background-color: #2b3058;
+    color: wheat;
+}
+
+.accordion-button{
+    background-color: #1c6d9c;
+    color: wheat;
+    font-size: larger;
+    
+}
+
+.accordion-button:not(.collapsed){
+    background-color: #1c6d9c;
+    color: wheat;
+    font-size: larger;
+}
+
+.accordion-button:focus{
+    background-color: #1c6d9c;
+    color: wheat;
+    font-size: larger;
+}
+
+.experiencias{
+    margin: 5rem;
+}
+
+.formacion{
+    margin: 5rem;
+}
+
+.contenedor-job{
+    font-size: larger;
+    padding: 2rem;
+    margin: 13px;
+    width: 31%;
+    justify-content: center;
+    background-color: #2b3058;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 99vw;
+    height: 100px;
+    padding: 5rem;
+    background-color: aqua;
+    color: black;
+}
+
+.social-network{
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    margin-top: 1em;
+}
+
+.social-network img{
+    font-size: 1.5rem;
+}
