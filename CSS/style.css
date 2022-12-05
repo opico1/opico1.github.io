@@ -10,6 +10,12 @@ body{
     color: aqua;
 }
 
+.proyectos ul li:hover{
+    background-color: rgb(55, 136, 241);
+    color: #191C32;
+    transition: ease-in 0.4s;
+}
+
 div ul li a:hover{
     background-color: rgb(55, 136, 241);
     color: #191C32;
@@ -31,7 +37,7 @@ h4{
 }
 
 .footer h2{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .footer h5{
@@ -44,7 +50,10 @@ span{
 }
 
 .aboutme{
-    font-size: x-large;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: stretch;
+    width: 100%;
 }
 
 main div .mycv{
@@ -115,7 +124,7 @@ main div .mycv{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 2rem;
+    height: 4rem;
     padding: 5rem;
     background-color: aqua;
     color: black;
@@ -130,4 +139,12 @@ main div .mycv{
 
 .social-network img{
     font-size: 1.5rem;
+}
+
+.myphoto {
+    margin-top: 3rem;
+}
+
+hr {
+    width: 100%;
 }

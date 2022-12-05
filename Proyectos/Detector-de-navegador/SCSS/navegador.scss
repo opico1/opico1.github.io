@@ -1,0 +1,109 @@
+* {
+    &, &:before, &:after, &:focus, &:active, &:focus:active {
+        box-sizing: border-box;
+        outline: none;
+    }
+}
+
+html {
+    font-size: 10px;
+}
+
+/* Colores*/
+$color-a: #222;
+
+/* Imagenes*/
+@mixin browserIcon($name) {
+    @if $name == "chrome" {
+        background-image: url("http://icons.iconarchive.com/icons/appicns/simplified-app/256/appicns-Chrome-icon.png");
+    }
+    @else if $name == "safari" {
+        background-image: url("http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/256/safari-icon.png");
+    }
+    @else if $name =="firefox" {
+        background-image: url("http://icons.iconarchive.com/icons/dakirby309/simply-styled/256/Firefox-icon.png");
+    }
+    @else if $name == "msie" {
+        background-image: url("https://cdn2.iconfinder.com/data/icons/metro-uinvert-dock/128/Internet_Explorer.png");
+    }
+    background-repeat: no-repeat;
+    background-size: 8rem 8rem;
+}
+
+/* Configuracion final */
+
+.container {
+    left: 50vw;
+    position: absolute;
+    top: 50vh;
+    transform: translateX(-50%) translateY(-50%);
+    .icon {
+        display: inline-block;
+        filter: grayscale(100%);
+        height: 8rem;
+        position: relative;
+        transition: all .3s ease-out;
+        width: 8rem;
+        &:after {
+            border-radius: 50%;
+            bottom: 2rem;
+            box-shadow: 0 3.3rem 1rem 0 rgba($color-a, .4);
+            content: "";
+            height: .5rem;
+            left: 20%;
+            position: absolute;
+            width: 60%;
+        }
+        &.active {
+            animation-name: hover;
+            filter: grayscale(0%);
+            &:after {
+                animation-name: hoverShadow;
+            }
+            &, &:after {
+                animation-duration: .8s;
+                animation-timing-function: ease-out;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
+        }
+        &.chrome {
+            @include browserIcon("chrome")
+        }
+        &.safari {
+            @include browserIcon("safari")
+        }
+        &.firefox {
+            @include browserIcon("firefox")
+        }
+        &.msie {
+            @include browserIcon("msie")
+        }
+    }
+}
+
+@keyframes hover {
+    from {
+        top: 0;
+        transform: scaleX(1) scaleY(1);
+    }
+    to {
+        top: -1.6rem;
+        transform: scaleX(.9) scaleY(1.05);
+    }
+}
+
+@keyframes hoverShadow {
+    from {
+        bottom: 2rem;
+        box-shadow: 0 3.3rem 1rem 0 rgba($color-a, .4);
+        left: 20%;
+        width: 60%;
+    }
+    to {
+        bottom: .6rem;
+        box-shadow: 0 3.2rem 1rem 0 rgba($color-a, .2);
+        left: 25%;
+        width: 50%;
+    }
+}
